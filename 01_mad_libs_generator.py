@@ -1,6 +1,15 @@
+"""
+You can chooes three different stories
+If you wanna add a story, change the line 11 to make possibile to choose another story.
+Then add a elif statement and insert different input and different story.
+Remember to add run = False to exit from the program
+"""
+
 print("Welcome in Mad Libs Generator!")
 run = True
+
 while(run):
+    
     story = int(input("Choose one story(1-2-3): "))
     print("Now insert the following words")
     print('-------------------------------')
@@ -14,9 +23,13 @@ while(run):
         place = input("Please insert a place name: ")
         verb = input("Please insert a verb: ")
         food = input("Please insert a food name: ")
+        
         print('-------------------------------')
+        
         print('say ' + food + ', the photographer said as the camera flashed! ' + name + ' and I had gone to ' + place +' to get our photos taken on my birthday. The first photo we really wanted was a picture of us dressed as ' + animal + ' pretending to be a ' + profession + '. when we saw the second photo, it was exactly what I wanted. We both looked like ' + thing + ' wearing ' + cloth + ' and ' + verb + ' --exactly what I had in mind')
+        
         run = False
+        
     elif story == 2:
         adjective = input("Please insert a adjective: ")
         color = input("Please insert a color name: ")
@@ -27,9 +40,12 @@ while(run):
         insect = input("Please insert a insect name: ")
         food = input("Please insert a food name: ")
         verb = input("Please insert a verb: ")
+        
         print('-------------------------------')
         print('Last night I dreamed I was a ' +adjective+ ' butterfly with ' + color+ ' splocthes that looked like '+thing+ ' .I flew to ' + place+ ' with my bestfriend and '+person+ ' who was a '+adjective2+ ' ' +insect +' .We ate some ' +food+ ' when we got there and then decided to '+verb+ ' and the dream ended when I said-- lets ' +verb+ '.')
+        
         run = False
+        
     elif story == 3:
         person = input("Please insert a person name: ")
         color = input("Please insert a color name: ")
@@ -41,7 +57,10 @@ while(run):
         adverb = input("Please insert a adverb: ")
         food = input("Please insert a food name: ")
         thing2 = input("Please insert a second thing name: ")
+        
+        print('-------------------------------')
         print('Today we picked apple from '+person+ "'s Orchard. I had no idea there were so many different varieties of apples. I ate " +color+ ' apples straight off the tree that tested like '+foods+ '. Then there was a '+adjective+ ' apple that looked like a ' + thing + '.When our bag were full, we went on a free hay ride to '+place+ ' and back. It ended at a hay pile where we got to ' +verb+ ' ' +adverb+ '. I can hardly wait to get home and cook with the apples. We are going to make appple '+food+ ' and '+thing2+' pies!.') 
+        
         run = False
     
     
