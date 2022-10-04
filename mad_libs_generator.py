@@ -1,4 +1,4 @@
-print("Welcomy in Mad Libs Generator!")
+print("Welcom in Mad Libs Generator!")
 run = True
 while(run):
     story = int(input("Choose one story(1-2-3): "))
